@@ -28,7 +28,6 @@ html, body{
 
 
 
-
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -390,7 +389,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
     float: right;
 }
 .header__el{
-    padding: 0 25px;
+    padding: 10px 17px;
     display: inline-block;
 }
 .header__img{
@@ -485,11 +484,11 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
 }
 
 .article-pre__img--third{
-  background-image: url(https://cdn.dribbble.com/users/103909/screenshots/3671664/sensors-01.jpg);  
+  background-image: url(../assets/barraca.jpeg);  
 }
 
 .article-pre__img--fourth{
-  background-image: url(https://cdn.dribbble.com/users/997070/screenshots/4120967/attachments/943230/01-1._Cover_Copy_2x.png);  
+  background-image: url(../assets/barraca2.jpeg);  
 }
 
 .article-pre:hover .article-pre__img {
