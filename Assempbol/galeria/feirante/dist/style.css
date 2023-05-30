@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
-
 .container {
   margin: auto;
   padding: 0 1rem;
   max-width: 71.25rem;
   width: 100%;
-}
-img{
-  border-radius: 7px;
 }
 
 .grid {
@@ -15,7 +11,6 @@ img{
   flex-direction: column;
   flex-flow: row wrap;
 }
-  
 .grid > [class*=column-] {
   display: block;
 }
