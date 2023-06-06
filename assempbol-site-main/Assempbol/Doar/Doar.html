@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <link rel="icon" href="logo.PNG">
+
+    <title>Exemplo formulário Apoia-se</title>
+
+    <!-- Principal CSS -->
+    <link href="acrescimo.css" rel="stylesheet">
+
+    <!-- Estilos customizados o template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="image" src="logo.PNG" alt="" width="90" height="87">
+        <p></p>
+        <h2>Formulário de Doação</h2>
+        <p class="lead">Doar é um ato de generosidade e solidariedade que pode fazer uma grande diferença na vida de muitas pessoas, pois ao oferecer um pouco do que temos, estamos contribuindo para a construção de uma sociedade mais justa e igualitária, onde todos possam ter acesso às necessidades básicas e viver com dignidade. Seja a mudança que você quer ver no mundo, faça a sua parte e doe hoje mesmo!</p>
+      </div>
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Deixe-nos conhecer um pouco sobre você</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="primeiroNome">Nome <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+                
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="sobrenome">Sobrenome <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+                
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com" required="">
+              <div class="invalid-feedback">
+                Por favor, insira um endereço de e-mail válido, para que entremos em contato.
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            
+
+            <h4 class="mb-3">Apoia-se</h4>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-valor">Valor de contribuição</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">R$</span>
+                  </div>
+                  <input type="text" class="form-control" id="cc-valor" placeholder="" required="">
+                <div class="invalid-feedback">
+                  É obrigatório informar o valor da contribuição.
+                </div>
+              </div>
+            </div>
+          </div>   
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-numero">Chave PIX:</label>
+                <input type="text" class="form-control" id="cc-nome" placeholder="" required="">
+                <div class="invalid-feedback">
+                  O número do PIX é necessário para a transição da doação.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-nome">Para quem será destinada a doação?</label>
+                <input type="text" class="form-control" id="cc-numero" placeholder="" required="">
+                <div class="invalid-feedback">
+                  O nome é necessário para que saibamos a quem o valor está sendo endereçado.
+                </div>
+              </div>
+            </div>
+            
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Doação</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2023-???? ASSEMPBOL</p>
+        
+      </footer>
+    </div>
+
+    <script>
+      // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Faz um loop neles e previne envio
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  
+</body>
+</html>
